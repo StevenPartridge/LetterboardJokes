@@ -1,5 +1,9 @@
 {
-  "name": "NodeExpressBase",
+  "name": "letterboardjokes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StevenPartridge/LetterboardJokes.git"
+  },
   "version": "1.0.0",
   "description": "Node express base application boilerplate.",
   "main": "boot.js",
@@ -8,7 +12,7 @@
     "test": "mocha 'spec/*.spec.js'",
     "buildexe": "pkg package.json --output executable/$npm_package_name.exe"
   },
-  "author": "Dustin Jorge",
+  "author": "Steven Partridge",
   "license": "MIT",
   "engines": {
     "node": ">=8.0"
@@ -19,19 +23,19 @@
       "public/**/*"
     ],
     "targets": [
-      "node8-win-x64"
+      "node12-linux-x64"
     ]
   },
   "dependencies": {
-    "dotenv": "^4.0.0",
-    "express": "^4.16.3",
-    "request-promise": "^4.2.2"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "request-promise": "^4.2.5"
   },
   "devDependencies": {
-    "jasmine": "^3.2.0",
-    "mocha": "^5.2.0",
-    "pkg": "^4.4.0",
-    "should": "^13.2.1",
-    "supertest": "^3.0.0"
+    "jasmine": "^3.5.0",
+    "mocha": "^7.0.0",
+    "pkg": "^4.4.2",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
   }
 }
