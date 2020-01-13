@@ -1,0 +1,37 @@
+{
+  "name": "NodeExpressBase",
+  "version": "1.0.0",
+  "description": "Node express base application boilerplate.",
+  "main": "boot.js",
+  "scripts": {
+    "start": "node boot.js",
+    "test": "mocha 'spec/*.spec.js'",
+    "buildexe": "pkg package.json --output executable/$npm_package_name.exe"
+  },
+  "author": "Dustin Jorge",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0"
+  },
+  "bin": "boot.js",
+  "pkg": {
+    "assets": [
+      "public/**/*"
+    ],
+    "targets": [
+      "node8-win-x64"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.16.3",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "mocha": "^5.2.0",
+    "pkg": "^4.4.0",
+    "should": "^13.2.1",
+    "supertest": "^3.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+
+# Ignore Node Modules
+node_modules
+
+# VS Code specific files
+.vscode
+
+# Ignore Package Lock to reduce merge conflicts
+package-lock.json
+
+# .env ignored as it could contain passwords
+.env
+
+# Public folder contents are not saved to this boilerplate
+public/*
+# The .gitkeep makes the /public/ folder stay in the project, so you know where to put assets
+!public/.gitkeep
+
+# Ignore the pgk output
+*.exe
