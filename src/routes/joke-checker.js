@@ -1,13 +1,15 @@
 'use strict';
 
-module.exports = ( req, res ) => {
+const checker = require( '../helpers/checker' );
 
-    console.log( req.body )
+module.exports = ( req, res ) => {
 
     if ( !req.body || !req.body.available || !req.body.available.length ) {
         res.status( 202 ).json({ "Message": "Please provide some letters to work with" });
         return;
-    };
+    }
 
-    res.status( 200 ).json({ "msg": "Good" });
+    const viableJokes = checker( req.body.available );
+
+    res.status( 200 ).json({ "message": "Good", "availableJokes": viableJokes });
 };
