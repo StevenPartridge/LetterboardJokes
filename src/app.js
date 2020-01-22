@@ -6,6 +6,11 @@ const routes = require( './routes' );
 const health = require( './routes/health' );
 const express = require( 'express' );
 const path = require( 'path' );
+const cors = require( 'cors' );
+
+if ( config.NODE_ENV === 'development' ) {
+    app.use( cors() );
+}
 
 // api routes
 app.all( '/api/*', routes );
