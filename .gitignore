@@ -12,9 +12,9 @@ package-lock.json
 .env
 
 # Public folder contents are not saved to this boilerplate
-public/*
+# public/*
 # The .gitkeep makes the /public/ folder stay in the project, so you know where to put assets
-!public/.gitkeep
+# !public/.gitkeep
 
 # Ignore the pgk output
 *.exe
