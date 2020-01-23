@@ -18,7 +18,6 @@
       <div class="input">
         <textarea type="text" name="letterInput" id="letterInput" #letterInput (keyup)="submitJoke( letterInput.value )">
           </textarea>
-        <button (click)="submitJoke()">Submit</button>
       </div>
       <div class="output">
         <textarea type="text" name="jokeOutput" id="jokeOutput" readonly value="{{ availableJokes }}">
